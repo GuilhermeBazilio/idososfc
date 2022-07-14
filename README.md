@@ -1,4 +1,4 @@
-<h1> idososfc </h1>
+<h1> Idosos Futebol Clube </h1>
 Projeto de BI do Idosos F.C - um time de futebol semanal. Atualmente, o controle do time é realizado via planilha de Excel do Google Drive. O projeto prevê a ingestão destes dados em um Datawarehouse e o consumo dos mesmos realizado por alguma ferramenta de dashboard gratuíta.
 
 <h2> Andamento: </h2>
