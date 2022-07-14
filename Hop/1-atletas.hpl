@@ -13,15 +13,20 @@
     <transform_performance_capturing_delay>1000</transform_performance_capturing_delay>
     <transform_performance_capturing_size_limit>100</transform_performance_capturing_size_limit>
     <created_user>-</created_user>
-    <created_date>2022/06/25 12:08:52.502</created_date>
+    <created_date>2022/07/14 10:41:47.962</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/06/25 12:08:52.502</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <modified_date>2022/07/14 10:41:47.962</modified_date>
+    <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <order>
+    <hop>
+      <from>Adiciona sequencia do ID</from>
+      <to>Get Data_carga</to>
+      <enabled>Y</enabled>
+    </hop>
     <hop>
       <from>Atletas</from>
       <to>Adiciona sequencia do ID</to>
@@ -35,11 +40,6 @@
     <hop>
       <from>Select values</from>
       <to>Insere na Tabela Atletas</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Adiciona sequencia do ID</from>
-      <to>Get Data_carga</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -63,8 +63,8 @@
     <valuename>ID</valuename>
     <attributes/>
     <GUI>
-      <xloc>320</xloc>
-      <yloc>64</yloc>
+      <xloc>464</xloc>
+      <yloc>112</yloc>
     </GUI>
   </transform>
   <transform>
@@ -94,7 +94,7 @@
     <accept_field/>
     <accept_transform_name/>
     <file>
-      <name>D:\2_TI\IdososFc\Futebol 2022.xlsx</name>
+      <name>D:\2_TI\IdososFc\idososfc\Dados\Futebol 2022.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -285,8 +285,8 @@
     <spreadsheet_type>POI</spreadsheet_type>
     <attributes/>
     <GUI>
-      <xloc>112</xloc>
-      <yloc>64</yloc>
+      <xloc>256</xloc>
+      <yloc>112</yloc>
     </GUI>
   </transform>
   <transform>
@@ -308,8 +308,8 @@
     </fields>
     <attributes/>
     <GUI>
-      <xloc>512</xloc>
-      <yloc>64</yloc>
+      <xloc>656</xloc>
+      <yloc>112</yloc>
     </GUI>
   </transform>
   <transform>
@@ -327,25 +327,22 @@
     <connection>Idosos FC</connection>
     <fields>
 </fields>
-    <return_field/>
     <ignore_errors>N</ignore_errors>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
     <return_keys>N</return_keys>
     <schema>dw_idosos</schema>
     <specify_fields>N</specify_fields>
     <table>dim_atletas</table>
-    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
     <use_batch>Y</use_batch>
     <attributes/>
     <GUI>
-      <xloc>880</xloc>
-      <yloc>64</yloc>
+      <xloc>1024</xloc>
+      <yloc>112</yloc>
     </GUI>
   </transform>
   <transform>
@@ -362,59 +359,45 @@
     <fields>
       <field>
         <name>ID</name>
-        <rename/>
       </field>
       <field>
         <name>Atleta</name>
-        <rename/>
       </field>
       <field>
         <name>Posicao</name>
-        <rename/>
       </field>
       <field>
         <name>Tier</name>
-        <rename/>
       </field>
       <field>
         <name>Presenca</name>
-        <rename/>
       </field>
       <field>
         <name>Vitorias</name>
-        <rename/>
       </field>
       <field>
         <name>Derrotas</name>
-        <rename/>
       </field>
       <field>
         <name>Empates</name>
-        <rename/>
       </field>
       <field>
         <name>Pontos</name>
-        <rename/>
       </field>
       <field>
         <name>Confirmou_presenca</name>
-        <rename/>
       </field>
       <field>
         <name>Observacao</name>
-        <rename/>
       </field>
       <field>
         <name>Fixo</name>
-        <rename/>
       </field>
       <field>
         <name>Data_Cadastro</name>
-        <rename/>
       </field>
       <field>
         <name>Data_carga</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -658,8 +641,8 @@
     </fields>
     <attributes/>
     <GUI>
-      <xloc>672</xloc>
-      <yloc>64</yloc>
+      <xloc>816</xloc>
+      <yloc>112</yloc>
     </GUI>
   </transform>
   <transform_error_handling>

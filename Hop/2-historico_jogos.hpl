@@ -117,7 +117,7 @@
     <accept_field/>
     <accept_transform_name/>
     <file>
-      <name>D:\2_TI\IdososFc\Futebol 2022.xlsx</name>
+      <name>D:\2_TI\IdososFc\idososfc\Dados\Futebol 2022.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -266,31 +266,24 @@
     <fields>
       <field>
         <name>ID</name>
-        <rename/>
       </field>
       <field>
         <name>JOGO</name>
-        <rename/>
       </field>
       <field>
         <name>POSICAO</name>
-        <rename/>
       </field>
       <field>
         <name>ATLETA</name>
-        <rename/>
       </field>
       <field>
         <name>TIME</name>
-        <rename/>
       </field>
       <field>
         <name>RESULTADO</name>
-        <rename/>
       </field>
       <field>
         <name>Data_carga</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
