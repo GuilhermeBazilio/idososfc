@@ -1,0 +1,4 @@
+host: 179.188.16.132
+database: idosos
+user: idosos
+senha: t6G$y8!$S9ev

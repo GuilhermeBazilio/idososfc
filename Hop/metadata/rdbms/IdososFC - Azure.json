@@ -1,0 +1,29 @@
+{
+  "rdbms": {
+    "MSSQLNATIVE": {
+      "databaseName": "sqldb-idososfc",
+      "instanceName": "",
+      "pluginId": "MSSQLNATIVE",
+      "usingDoubleDigit": false,
+      "usingIntegratedSecurity": false,
+      "accessType": 0,
+      "hostname": "sql-idososfc.database.windows.net",
+      "password": "Encrypted 46d7eacabc05d59ba4944bfa2088c0fd9b",
+      "port": "",
+      "pluginName": "MS SQL Server (Native)",
+      "attributes": {
+        "SUPPORTS_TIMESTAMP_DATA_TYPE": "Y",
+        "QUOTE_ALL_FIELDS": "N",
+        "SUPPORTS_BOOLEAN_DATA_TYPE": "Y",
+        "FORCE_IDENTIFIERS_TO_LOWERCASE": "N",
+        "PRESERVE_RESERVED_WORD_CASE": "Y",
+        "SQL_CONNECT": "",
+        "FORCE_IDENTIFIERS_TO_UPPERCASE": "N",
+        "PREFERRED_SCHEMA_NAME": ""
+      },
+      "manualUrl": "",
+      "username": "idososfc"
+    }
+  },
+  "name": "IdososFC - Azure"
+}
