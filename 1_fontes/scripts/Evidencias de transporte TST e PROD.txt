@@ -1,0 +1,27 @@
+select count(*) Registros, 'dim_atletas' Objeto from dim_atletas
+union all
+select count(*) Registros, 'fato_historico_jogos' Objeto from fato_historico_jogos
+union all
+select count(*) Registros, 'fato_aproveitamento_individual' Objeto from fato_aproveitamento_individual
+union all
+select count(*) Registros, 'fato_aproveitamento_mensal_2022' Objeto from fato_aproveitamento_mensal_2022
+union all
+select count(*) Registros, 'fato_derrota' Objeto from fato_derrota
+union all
+select count(*) Registros, 'fato_derrotas_2022' Objeto from fato_derrotas_2022
+union all
+select count(*) Registros, 'fato_empate' Objeto from fato_empate
+union all
+select count(*) Registros, 'fato_empates_2022' Objeto from fato_empates_2022
+union all
+select count(*) Registros, 'fato_pontos' Objeto from fato_pontos
+union all
+select count(*) Registros, 'fato_pontos_2022' Objeto from fato_pontos_2022
+union all
+select count(*) Registros, 'fato_presenca' Objeto from fato_presenca
+union all
+select count(*) Registros, 'fato_presenca_2022' Objeto from fato_presenca_2022
+union all
+select count(*) Registros, 'fato_vitoria' Objeto from fato_vitoria
+union all
+select count(*) Registros, 'fato_vitorias_2022' Objeto from fato_vitorias_2022

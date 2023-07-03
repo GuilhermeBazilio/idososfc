@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipeline>
+  <info>
+    <name>2_10_FATO_vitorias_2022</name>
+    <name_sync_with_filename>Y</name_sync_with_filename>
+    <description/>
+    <extended_description/>
+    <pipeline_version/>
+    <pipeline_type>Normal</pipeline_type>
+    <parameters>
+    </parameters>
+    <capture_transform_performance>N</capture_transform_performance>
+    <transform_performance_capturing_delay>1000</transform_performance_capturing_delay>
+    <transform_performance_capturing_size_limit>100</transform_performance_capturing_size_limit>
+    <created_user>-</created_user>
+    <created_date>2022/11/30 21:08:30.027</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2022/11/30 21:08:30.027</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <order>
+  </order>
+  <transform>
+    <name>Insere dados FATO_vitorias_2022</name>
+    <type>ExecSql</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <arguments>
+</arguments>
+    <connection>db_bazilio_test</connection>
+    <delete_field/>
+    <execute_each_row>N</execute_each_row>
+    <insert_field/>
+    <quoteString>N</quoteString>
+    <read_field/>
+    <replace_variables>N</replace_variables>
+    <set_params>N</set_params>
+    <single_statement>N</single_statement>
+    <sql>DROP TABLE IF EXISTS IDOSOS_STG.FATO_VITORIAS_2022;
+
+with CADASTRO(CADASTRO_id, CADASTRO_atleta)
+as
+(
+	SELECT ATLETA.ID,
+		ATLETA.ATLETA
+	FROM IDOSOS_STG.dim_atletas ATLETA
+)
+,
+
+JANEIRO ( JANEIRO_ID,JANEIRO_ATLETA,JANEIRO_2O22)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as jan_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 1				
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,jan_2022
+),
+
+FEVEREIRO ( FEVEREIRO_ID,FEVEREIRO_ATLETA,FEVEREIRO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as FEV_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 2				
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,FEV_2022
+),
+MARCO ( MARCO_ID,MARCO_ATLETA,MARCO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as MARCO_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 3				
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,MARCO_2022
+)
+,
+ABRIL ( ABRIL_ID,ABRIL_ATLETA,ABRIL_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as ABRIL_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 4			
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,ABRIL_2022
+)
+,
+MAIO ( MAIO_ID,MAIO_ATLETA,MAIO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as MAIO_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 5		
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,MAIO_2022
+)
+,
+JUNHO ( JUNHO_ID,JUNHO_ATLETA,JUNHO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as JUNHO_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 6	
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,JUNHO_2022
+)
+,
+JULHO ( JULHO_ID,JULHO_ATLETA,JULHO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as JULHO_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 7	
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,JULHO_2022
+)
+,
+AGOSTO ( AGOSTO_ID,AGOSTO_ATLETA,AGOSTO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as AGOSTO_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 8
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,AGOSTO_2022
+)
+,
+SETEMBRO ( SETEMBRO_ID,SETEMBRO_ATLETA,SETEMBRO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as SETEMBRO_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 9
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,SETEMBRO_2022
+)
+,
+OUTUBRO ( OUTUBRO_ID,OUTUBRO_ATLETA,OUTUBRO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as OUTUBRO_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 10
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,OUTUBRO_2022
+)
+,
+NOVEMBRO ( NOVEMBRO_ID,NOVEMBRO_ATLETA,NOVEMBRO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as NOVEMBRO_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 11
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,NOVEMBRO_2022
+)
+
+,
+DEZEMBRO ( DEZEMBRO_ID,DEZEMBRO_ATLETA,DEZEMBRO_2022)
+AS
+(
+	select * 
+	from (
+			select atleta.id id , atleta.atleta atleta ,
+			count(*) over(partition by atleta.atleta) as DEZEMBRO_2022
+			from IDOSOS_STG.dim_atletas atleta
+			left join IDOSOS_STG.fato_historico_jogos jogos
+			on atleta.atleta = jogos.atleta
+			where month(jogos.jogo) = 12
+			and jogos.RESULTADO = 'V'
+			) tbl
+	group by id,atleta,DEZEMBRO_2022
+)
+SELECT CADASTRO_id AS ID,
+	   CADASTRO_atleta AS ATLETA,
+	   JANEIRO_2O22 AS JANEIRO,
+	   FEVEREIRO_2022 AS FEVEREIRO,
+	   MARCO_2022 AS MARCO,
+	   ABRIL_2022 AS ABRIL,
+	   MAIO_2022 AS MAIO,
+	   JUNHO_2022 AS JUNHO,
+	   JULHO_2022 AS JULHO,
+	   AGOSTO_2022 AS AGOSTO,
+	   SETEMBRO_2022 AS SETEMBRO,
+	   OUTUBRO_2022 AS OUTUBRO,
+	   NOVEMBRO_2022 AS NOVEMBRO,
+	   DEZEMBRO_2022 AS DEZEMBRO,
+	   GETDATE() AS DATA_CARGA
+INTO
+			IDOSOS_STG.FATO_VITORIAS_2022
+FROM CADASTRO
+LEFT JOIN JANEIRO
+	ON  CADASTRO_id = JANEIRO_ID
+LEFT JOIN FEVEREIRO
+	ON  CADASTRO_id = FEVEREIRO_ID
+LEFT JOIN MARCO
+	ON  CADASTRO_id = MARCO_ID
+LEFT JOIN ABRIL
+	ON  CADASTRO_id = ABRIL_ID
+LEFT JOIN MAIO
+	ON  CADASTRO_id = MAIO_ID
+LEFT JOIN JUNHO
+	ON  CADASTRO_id = JUNHO_ID
+LEFT JOIN JULHO
+	ON  CADASTRO_id = JULHO_ID
+LEFT JOIN AGOSTO
+	ON  CADASTRO_id = AGOSTO_ID
+LEFT JOIN SETEMBRO
+	ON  CADASTRO_id = SETEMBRO_ID
+LEFT JOIN OUTUBRO
+	ON  CADASTRO_id = OUTUBRO_ID
+LEFT JOIN NOVEMBRO
+	ON  CADASTRO_id = NOVEMBRO_ID
+LEFT JOIN DEZEMBRO
+	ON  CADASTRO_id = DEZEMBRO_ID
+
+CREATE INDEX  idx_fato_vitorias ON IDOSOS_STG.FATO_VITORIAS_2022 (id);
+
+
+</sql>
+    <update_field/>
+    <attributes/>
+    <GUI>
+      <xloc>272</xloc>
+      <yloc>96</yloc>
+    </GUI>
+  </transform>
+  <transform_error_handling>
+  </transform_error_handling>
+  <attributes/>
+</pipeline>

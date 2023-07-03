@@ -1,0 +1,25 @@
+select * from dim_atletas;
+
+select * from fato_historico_jogos;
+
+select  * from fato_presenca;
+
+select  * from fato_empate;
+
+select  * from fato_vitoria;
+
+select  * from fato_derrota;
+
+select  * from fato_pontos;
+
+select  * from fato_aproveitamento_individual;
+
+select  * from fato_vitorias_2022;
+
+select * from fato_derrotas_2022;
+
+select * from fato_empates_2022;
+
+select * from fato_pontos_2022;
+
+select  * from fato_aproveitamento_mensal_2022;

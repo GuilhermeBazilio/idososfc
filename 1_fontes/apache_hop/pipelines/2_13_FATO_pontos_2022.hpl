@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipeline>
+  <info>
+    <name>2_13_FATO_pontos_2022</name>
+    <name_sync_with_filename>Y</name_sync_with_filename>
+    <description/>
+    <extended_description/>
+    <pipeline_version/>
+    <pipeline_type>Normal</pipeline_type>
+    <parameters>
+    </parameters>
+    <capture_transform_performance>N</capture_transform_performance>
+    <transform_performance_capturing_delay>1000</transform_performance_capturing_delay>
+    <transform_performance_capturing_size_limit>100</transform_performance_capturing_size_limit>
+    <created_user>-</created_user>
+    <created_date>2022/12/03 13:36:34.592</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2022/12/03 13:36:34.592</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <order>
+  </order>
+  <transform>
+    <name>Insere dados FATO_pontos_2022</name>
+    <type>ExecSql</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <arguments>
+</arguments>
+    <connection>db_bazilio_test</connection>
+    <delete_field/>
+    <execute_each_row>N</execute_each_row>
+    <insert_field/>
+    <quoteString>N</quoteString>
+    <read_field/>
+    <replace_variables>N</replace_variables>
+    <set_params>N</set_params>
+    <single_statement>N</single_statement>
+    <sql>DROP TABLE IF EXISTS IDOSOS_STG.FATO_pontos_2022;
+
+select atleta.id, atleta.atleta,  
+-- JANEIRO
+	case 
+		when empates.JANEIRO is not null and vitorias.JANEIRO is not null then
+			SUM((vitorias.JANEIRO * 3) + empates.JANEIRO) over(partition by atleta.id) 
+		when empates.JANEIRO is null and vitorias.JANEIRO is null then 
+			0
+		when empates.JANEIRO is null and vitorias.JANEIRO is not null then
+			SUM(vitorias.JANEIRO * 3) over(partition by atleta.id) 
+		when empates.JANEIRO is not null and vitorias.JANEIRO is null then
+			empates.JANEIRO
+	End JANEIRO,
+-- FEVEREIRO
+	case 
+		when empates.FEVEREIRO is not null and vitorias.FEVEREIRO is not null then
+			SUM((vitorias.FEVEREIRO * 3) + empates.FEVEREIRO) over(partition by atleta.id) 
+		when empates.FEVEREIRO is null and vitorias.FEVEREIRO is null then 
+			0
+		when empates.FEVEREIRO is null and vitorias.FEVEREIRO is not null then
+			SUM(vitorias.FEVEREIRO * 3) over(partition by atleta.id) 
+		when empates.FEVEREIRO is not null and vitorias.FEVEREIRO is null then
+			empates.FEVEREIRO
+	End FEVEREIRO,
+-- MARÇO
+	case 
+		when empates.MARCO is not null and vitorias.MARCO is not null then
+			SUM((vitorias.MARCO * 3) + empates.MARCO) over(partition by atleta.id) 
+		when empates.MARCO is null and vitorias.MARCO is null then 
+			0
+		when empates.MARCO is null and vitorias.MARCO is not null then
+			SUM(vitorias.MARCO * 3) over(partition by atleta.id) 
+		when empates.MARCO is not null and vitorias.MARCO is null then
+			empates.MARCO
+	End MARCO,
+-- ABRIL	
+	case 
+		when empates.ABRIL is not null and vitorias.ABRIL is not null then
+			SUM((vitorias.abril * 3) + empates.ABRIL) over(partition by atleta.id) 
+		when empates.ABRIL is null and vitorias.ABRIL is null then 
+			0
+		when empates.ABRIL is null and vitorias.ABRIL is not null then
+			SUM(vitorias.abril * 3) over(partition by atleta.id) 
+		when empates.ABRIL is not null and vitorias.ABRIL is null then
+			empates.ABRIL
+	End ABRIL,
+--MAIO
+	case 
+		when empates.MAIO is not null and vitorias.MAIO is not null then
+			SUM((vitorias.MAIO * 3) + empates.MAIO) over(partition by atleta.id) 
+		when empates.MAIO is null and vitorias.MAIO is null then 
+			0
+		when empates.MAIO is null and vitorias.MAIO is not null then
+			SUM(vitorias.MAIO * 3) over(partition by atleta.id) 
+		when empates.MAIO is not null and vitorias.MAIO is null then
+			empates.MAIO
+	End MAIO,
+--JUNHO
+	case 
+		when empates.JUNHO is not null and vitorias.JUNHO is not null then
+			SUM((vitorias.JUNHO * 3) + empates.JUNHO) over(partition by atleta.id) 
+		when empates.JUNHO is null and vitorias.JUNHO is null then 
+			0
+		when empates.JUNHO is null and vitorias.JUNHO is not null then
+			SUM(vitorias.JUNHO * 3) over(partition by atleta.id) 
+		when empates.JUNHO is not null and vitorias.JUNHO is null then
+			empates.JUNHO
+	End JUNHO,
+--JULHO
+	case 
+		when empates.JULHO is not null and vitorias.JULHO is not null then
+			SUM((vitorias.JULHO * 3) + empates.JULHO) over(partition by atleta.id) 
+		when empates.JULHO is null and vitorias.JULHO is null then 
+			0
+		when empates.JULHO is null and vitorias.JULHO is not null then
+			SUM(vitorias.JULHO * 3) over(partition by atleta.id) 
+		when empates.JULHO is not null and vitorias.JULHO is null then
+			empates.JULHO
+	End JULHO,
+--AGOSTO
+	case 
+		when empates.AGOSTO is not null and vitorias.AGOSTO is not null then
+			SUM((vitorias.AGOSTO * 3) + empates.AGOSTO) over(partition by atleta.id) 
+		when empates.AGOSTO is null and vitorias.AGOSTO is null then 
+			0
+		when empates.AGOSTO is null and vitorias.AGOSTO is not null then
+			SUM(vitorias.AGOSTO * 3) over(partition by atleta.id) 
+		when empates.AGOSTO is not null and vitorias.AGOSTO is null then
+			empates.AGOSTO
+	End AGOSTO,
+--SETEMBRO
+	case 
+		when empates.SETEMBRO is not null and vitorias.SETEMBRO is not null then
+			SUM((vitorias.SETEMBRO * 3) + empates.SETEMBRO) over(partition by atleta.id) 
+		when empates.SETEMBRO is null and vitorias.SETEMBRO is null then 
+			0
+		when empates.SETEMBRO is null and vitorias.SETEMBRO is not null then
+			SUM(vitorias.SETEMBRO * 3) over(partition by atleta.id) 
+		when empates.SETEMBRO is not null and vitorias.SETEMBRO is null then
+			empates.SETEMBRO
+	End SETEMBRO,
+--OUTUBRO
+	case 
+		when empates.OUTUBRO is not null and vitorias.OUTUBRO is not null then
+			SUM((vitorias.OUTUBRO * 3) + empates.OUTUBRO) over(partition by atleta.id) 
+		when empates.OUTUBRO is null and vitorias.OUTUBRO is null then 
+			0
+		when empates.OUTUBRO is null and vitorias.OUTUBRO is not null then
+			SUM(vitorias.OUTUBRO * 3) over(partition by atleta.id) 
+		when empates.OUTUBRO is not null and vitorias.OUTUBRO is null then
+			empates.OUTUBRO
+	End OUTUBRO,
+--NOVEMBRO
+	case 
+		when empates.NOVEMBRO is not null and vitorias.NOVEMBRO is not null then
+			SUM((vitorias.NOVEMBRO * 3) + empates.NOVEMBRO) over(partition by atleta.id) 
+		when empates.NOVEMBRO is null and vitorias.NOVEMBRO is null then 
+			0
+		when empates.NOVEMBRO is null and vitorias.NOVEMBRO is not null then
+			SUM(vitorias.NOVEMBRO * 3) over(partition by atleta.id) 
+		when empates.NOVEMBRO is not null and vitorias.NOVEMBRO is null then
+			empates.NOVEMBRO
+	End NOVEMBRO,
+--DEZEMBRO
+	case 
+		when empates.DEZEMBRO is not null and vitorias.DEZEMBRO is not null then
+			SUM((vitorias.DEZEMBRO * 3) + empates.DEZEMBRO) over(partition by atleta.id) 
+		when empates.DEZEMBRO is null and vitorias.DEZEMBRO is null then 
+			0
+		when empates.DEZEMBRO is null and vitorias.DEZEMBRO is not null then
+			SUM(vitorias.DEZEMBRO * 3) over(partition by atleta.id) 
+		when empates.DEZEMBRO is not null and vitorias.DEZEMBRO is null then
+			empates.DEZEMBRO
+	End DEZEMBRO,
+	   GETDATE() AS DATA_CARGA
+INTO
+			IDOSOS_STG.FATO_pontos_2022
+from IDOSOS_STG.dim_atletas atleta
+left join IDOSOS_STG.FATO_VITORIAS_2022 vitorias
+on atleta.id = vitorias.id
+left join IDOSOS_STG.FATO_empates_2022 empates
+on atleta.id = empates.id;
+
+CREATE INDEX  idx_fato_pontos_2022 ON IDOSOS_STG.FATO_pontos_2022 (id);
+
+
+</sql>
+    <update_field/>
+    <attributes/>
+    <GUI>
+      <xloc>320</xloc>
+      <yloc>96</yloc>
+    </GUI>
+  </transform>
+  <transform_error_handling>
+  </transform_error_handling>
+  <attributes/>
+</pipeline>

@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+  <name>2_workflow_camada_STG</name>
+  <name_sync_with_filename>Y</name_sync_with_filename>
+  <description/>
+  <extended_description/>
+  <workflow_version/>
+  <created_user>-</created_user>
+  <created_date>2022/12/06 20:33:46.178</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2022/12/06 20:33:46.178</modified_date>
+  <parameters>
+    </parameters>
+  <actions>
+    <action>
+      <name>Start</name>
+      <description/>
+      <type>SPECIAL</type>
+      <attributes/>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <xloc>50</xloc>
+      <yloc>50</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_1_DIM_Atletas.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_1_DIM_Atletas.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>192</xloc>
+      <yloc>48</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_2_FATO_historico_jogos.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_2_FATO_historico_jogos.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>432</xloc>
+      <yloc>48</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_3-deleta_linhas_vazias.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_3-deleta_linhas_vazias.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>640</xloc>
+      <yloc>48</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_4_FATO_presenca.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_4_FATO_presenca.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>832</xloc>
+      <yloc>48</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_5_FATO_empate.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_5_FATO_empate.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>1024</xloc>
+      <yloc>48</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_6_FATO_vitoria.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_6_FATO_vitoria.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>1024</xloc>
+      <yloc>240</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_7_FATO_derrota.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_7_FATO_derrota.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>832</xloc>
+      <yloc>240</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_8_FATO_pontos.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_8_FATO_pontos.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>640</xloc>
+      <yloc>240</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_9_FATO_aproveitamento_individual.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_9_FATO_aproveitamento_individual.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>432</xloc>
+      <yloc>240</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_10_FATO_vitorias_2022.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_10_FATO_vitorias_2022.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>192</xloc>
+      <yloc>240</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_11_FATO_derrotas_2022.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_11_FATO_derrotas_2022.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>192</xloc>
+      <yloc>528</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_12_FATO_presencas_2022.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_12_FATO_presencas_2022.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>640</xloc>
+      <yloc>528</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_13_FATO_pontos_2022.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_13_FATO_pontos_2022.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>832</xloc>
+      <yloc>528</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_111_FATO_empates_2022.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_11_FATO_empates_2022.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>432</xloc>
+      <yloc>528</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>2_14_FATO_aproveitamento_mensal_2022.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>${PROJECT_HOME}/pipelines/2_14_FATO_aproveitamento_mensal_2022.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>1088</xloc>
+      <yloc>528</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_1</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_1- Carga da guia Atletas - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>192</xloc>
+      <yloc>144</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_2</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_2- Carga da guia histórico de jogos - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>432</xloc>
+      <yloc>144</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Sucess</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+A carga de dados na camada STG , do IDOSOS F.C, foi concluída com sucesso!
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>1440</xloc>
+      <yloc>528</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_3</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_3- Deleta linhas vazias - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>640</xloc>
+      <yloc>144</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_4</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_4- Fato Presenca - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>832</xloc>
+      <yloc>144</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_5</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_5- Fato Empates - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>1152</xloc>
+      <yloc>160</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_6</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_6- Fato Vitoria - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>1024</xloc>
+      <yloc>416</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_7</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_7- Fato Derrota - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>832</xloc>
+      <yloc>416</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_8</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_8- Fato Pontos - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>640</xloc>
+      <yloc>416</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_9</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_9- Fato Aproveitamento Individual - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>432</xloc>
+      <yloc>416</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_10</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_10- Fato Vitorias 2022 - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>64</xloc>
+      <yloc>352</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_11</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_11- Fato Derrotas 2022 - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>192</xloc>
+      <yloc>688</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_111</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_111- Fato Empates 2022 - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>432</xloc>
+      <yloc>688</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_12</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_12- Fato Presencas 2022 - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>640</xloc>
+      <yloc>688</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_13</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_13- Fato Pontos 2022 - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>832</xloc>
+      <yloc>688</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>Mail Error - 2_14</name>
+      <description/>
+      <type>MAIL</type>
+      <attributes/>
+      <server>smtp.gmail.com</server>
+      <port>587</port>
+      <destination>bazilio.developer@gmail.com</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>bazilio.developer@gmail.com</replyto>
+      <replytoname>Guilherme Bazilio</replytoname>
+      <subject>Rotina de carga da planilha Idosos F. C.</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Olá,
+
+Esta é uma mensagem automática. Por favor, não responda.
+
+Ocorreu um erro no processo de carga da planilha do Idosos F.C.
+
+Processo: 2_14- Fato Aproveitamento Mensal 2022 - STG
+
+</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>Y</use_auth>
+      <use_secure_auth>Y</use_secure_auth>
+      <auth_user>bazilio.developer@gmail.com</auth_user>
+      <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
+      <only_comment>N</only_comment>
+      <use_HTML>N</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>UTF-8</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>TLS 1.2</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>
+      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <xloc>1088</xloc>
+      <yloc>688</yloc>
+      <attributes_hac/>
+    </action>
+  </actions>
+  <hops>
+    <hop>
+      <from>2_5_FATO_empate.hpl</from>
+      <to>2_6_FATO_vitoria.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Start</from>
+      <to>2_1_DIM_Atletas.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>2_1_DIM_Atletas.hpl</from>
+      <to>2_2_FATO_historico_jogos.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_2_FATO_historico_jogos.hpl</from>
+      <to>2_3-deleta_linhas_vazias.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_3-deleta_linhas_vazias.hpl</from>
+      <to>2_4_FATO_presenca.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_4_FATO_presenca.hpl</from>
+      <to>2_5_FATO_empate.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_6_FATO_vitoria.hpl</from>
+      <to>2_7_FATO_derrota.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_7_FATO_derrota.hpl</from>
+      <to>2_8_FATO_pontos.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_8_FATO_pontos.hpl</from>
+      <to>2_9_FATO_aproveitamento_individual.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_9_FATO_aproveitamento_individual.hpl</from>
+      <to>2_10_FATO_vitorias_2022.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_10_FATO_vitorias_2022.hpl</from>
+      <to>2_11_FATO_derrotas_2022.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_11_FATO_derrotas_2022.hpl</from>
+      <to>2_111_FATO_empates_2022.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_111_FATO_empates_2022.hpl</from>
+      <to>2_12_FATO_presencas_2022.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_12_FATO_presencas_2022.hpl</from>
+      <to>2_13_FATO_pontos_2022.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_13_FATO_pontos_2022.hpl</from>
+      <to>2_14_FATO_aproveitamento_mensal_2022.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_14_FATO_aproveitamento_mensal_2022.hpl</from>
+      <to>Mail Sucess</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_1_DIM_Atletas.hpl</from>
+      <to>Mail Error - 2_1</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_2_FATO_historico_jogos.hpl</from>
+      <to>Mail Error - 2_2</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_3-deleta_linhas_vazias.hpl</from>
+      <to>Mail Error - 2_3</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_4_FATO_presenca.hpl</from>
+      <to>Mail Error - 2_4</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_5_FATO_empate.hpl</from>
+      <to>Mail Error - 2_5</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_6_FATO_vitoria.hpl</from>
+      <to>Mail Error - 2_6</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_7_FATO_derrota.hpl</from>
+      <to>Mail Error - 2_7</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_8_FATO_pontos.hpl</from>
+      <to>Mail Error - 2_8</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_9_FATO_aproveitamento_individual.hpl</from>
+      <to>Mail Error - 2_9</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_10_FATO_vitorias_2022.hpl</from>
+      <to>Mail Error - 2_10</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_11_FATO_derrotas_2022.hpl</from>
+      <to>Mail Error - 2_11</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_111_FATO_empates_2022.hpl</from>
+      <to>Mail Error - 2_111</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_12_FATO_presencas_2022.hpl</from>
+      <to>Mail Error - 2_12</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_13_FATO_pontos_2022.hpl</from>
+      <to>Mail Error - 2_13</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>2_14_FATO_aproveitamento_mensal_2022.hpl</from>
+      <to>Mail Error - 2_14</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+  <attributes/>
+</workflow>
