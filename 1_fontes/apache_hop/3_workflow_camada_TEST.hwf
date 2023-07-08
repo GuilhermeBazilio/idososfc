@@ -17,14 +17,14 @@
       <description/>
       <type>SPECIAL</type>
       <attributes/>
+      <DayOfMonth>1</DayOfMonth>
+      <hour>12</hour>
+      <intervalMinutes>60</intervalMinutes>
+      <intervalSeconds>0</intervalSeconds>
+      <minutes>0</minutes>
       <repeat>N</repeat>
       <schedulerType>0</schedulerType>
-      <intervalSeconds>0</intervalSeconds>
-      <intervalMinutes>60</intervalMinutes>
-      <hour>12</hour>
-      <minutes>0</minutes>
       <weekDay>1</weekDay>
-      <DayOfMonth>1</DayOfMonth>
       <parallel>N</parallel>
       <xloc>50</xloc>
       <yloc>50</yloc>
@@ -35,24 +35,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_1_DIM_atletas.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_1_DIM_atletas.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>224</xloc>
       <yloc>48</yloc>
@@ -63,54 +63,26 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_2_FATO_historico_jogos.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_2_FATO_historico_jogos.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>464</xloc>
-      <yloc>48</yloc>
-      <attributes_hac/>
-    </action>
-    <action>
-      <name>3_3_FATO_presenca.hpl</name>
-      <description/>
-      <type>PIPELINE</type>
-      <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_3_FATO_presenca.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
-      <parallel>N</parallel>
-      <xloc>704</xloc>
       <yloc>48</yloc>
       <attributes_hac/>
     </action>
@@ -119,24 +91,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_4_FATO_empate.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_4_FATO_empate.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>928</xloc>
       <yloc>48</yloc>
@@ -147,24 +119,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_5_FATO_vitoria.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_5_FATO_vitoria.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>1152</xloc>
       <yloc>48</yloc>
@@ -175,24 +147,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_6_FATO_derrota.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_6_FATO_derrota.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>1360</xloc>
       <yloc>48</yloc>
@@ -203,24 +175,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_7_FATO_pontos.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_7_FATO_pontos.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>1568</xloc>
       <yloc>48</yloc>
@@ -231,24 +203,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_8_FATO_aproveitamento_individual.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_8_FATO_aproveitamento_individual.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>1840</xloc>
       <yloc>48</yloc>
@@ -259,24 +231,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_9_FATO_vitorias_2022.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_9_FATO_vitorias_2022.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>1840</xloc>
       <yloc>272</yloc>
@@ -287,24 +259,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_10_FATO_derrotas_2022.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_10_FATO_derrotas_2022.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>1584</xloc>
       <yloc>272</yloc>
@@ -315,24 +287,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_11_FATO_empates_2022.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_11_FATO_empates_2022.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>1376</xloc>
       <yloc>272</yloc>
@@ -343,24 +315,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_12_FATO_presenca_2022.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_12_FATO_presenca_2022.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>1168</xloc>
       <yloc>272</yloc>
@@ -371,24 +343,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_13_FATO_pontos_2022.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_13_FATO_pontos_2022.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>928</xloc>
       <yloc>272</yloc>
@@ -399,24 +371,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/3_14_FATO_aproveitamento_mensal_2022.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_14_FATO_aproveitamento_mensal_2022.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>656</xloc>
       <yloc>272</yloc>
@@ -451,6 +423,7 @@ Processo: 3_1- Carga DIM_ATLETAS - TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -498,6 +471,7 @@ A carga de dados na camada TESTE , do IDOSOS F.C, foi concluída com sucesso!
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -547,6 +521,7 @@ Processo: 3_2- Carga da FATO HISTÓRICO JOGOS- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -596,6 +571,7 @@ Processo: 3_3- Carga FATO PRESENCA- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -645,6 +621,7 @@ Processo: 3_4- Carga da FATO EMPATE - TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -694,6 +671,7 @@ Processo: 3_5- Carga da FATO VITORIA- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -743,6 +721,7 @@ Processo: 3_6- Carga da FATO DERROTA- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -792,6 +771,7 @@ Processo: 3_7- Carga da FATO PONTOS- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -841,6 +821,7 @@ Processo: 3_8- Carga da FATO APROVEITAMENTO INDIVIDUAL- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -890,6 +871,7 @@ Processo: 3_9- Carga da FATO VITORIAS 2022- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -939,6 +921,7 @@ Processo: 3_10- Carga da FATO DERROTAS 2022- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -988,6 +971,7 @@ Processo: 3_11- Carga da FATO EMPATES 2022- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -1037,6 +1021,7 @@ Processo: 3_12- Carga da FATO PRESENCAS 2022- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -1086,6 +1071,7 @@ Processo: 3_13- Carga da FATO PONTOS 2022- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -1135,6 +1121,7 @@ Processo: 3_14- Carga da FATO APROVEITAMENTO MENSAL  2022- TST
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -1155,6 +1142,34 @@ Processo: 3_14- Carga da FATO APROVEITAMENTO MENSAL  2022- TST
       <yloc>384</yloc>
       <attributes_hac/>
     </action>
+    <action>
+      <name>3_3_FATO_presenca.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
+      <create_parent_folder>N</create_parent_folder>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/3_3_FATO_presenca.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <parallel>N</parallel>
+      <xloc>704</xloc>
+      <yloc>48</yloc>
+      <attributes_hac/>
+    </action>
   </actions>
   <hops>
     <hop>
@@ -1167,20 +1182,6 @@ Processo: 3_14- Carga da FATO APROVEITAMENTO MENSAL  2022- TST
     <hop>
       <from>3_1_DIM_atletas.hpl</from>
       <to>3_2_FATO_historico_jogos.hpl</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>3_2_FATO_historico_jogos.hpl</from>
-      <to>3_3_FATO_presenca.hpl</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>3_3_FATO_presenca.hpl</from>
-      <to>3_4_FATO_empate.hpl</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
@@ -1277,13 +1278,6 @@ Processo: 3_14- Carga da FATO APROVEITAMENTO MENSAL  2022- TST
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>3_3_FATO_presenca.hpl</from>
-      <to>Mail Error - 3_3</to>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
       <from>3_4_FATO_empate.hpl</from>
       <to>Mail Error - 3_4</to>
       <enabled>Y</enabled>
@@ -1356,6 +1350,27 @@ Processo: 3_14- Carga da FATO APROVEITAMENTO MENSAL  2022- TST
     <hop>
       <from>3_14_FATO_aproveitamento_mensal_2022.hpl</from>
       <to>Mail Error - 3_14</to>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>3_2_FATO_historico_jogos.hpl</from>
+      <to>3_3_FATO_presenca.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>3_3_FATO_presenca.hpl</from>
+      <to>3_4_FATO_empate.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>3_3_FATO_presenca.hpl</from>
+      <to>Mail Error - 3_3</to>
       <enabled>Y</enabled>
       <evaluation>N</evaluation>
       <unconditional>N</unconditional>

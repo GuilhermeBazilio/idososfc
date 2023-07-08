@@ -17,14 +17,14 @@
       <description/>
       <type>SPECIAL</type>
       <attributes/>
+      <DayOfMonth>1</DayOfMonth>
+      <hour>12</hour>
+      <intervalMinutes>60</intervalMinutes>
+      <intervalSeconds>0</intervalSeconds>
+      <minutes>0</minutes>
       <repeat>N</repeat>
       <schedulerType>0</schedulerType>
-      <intervalSeconds>0</intervalSeconds>
-      <intervalMinutes>60</intervalMinutes>
-      <hour>12</hour>
-      <minutes>0</minutes>
       <weekDay>1</weekDay>
-      <DayOfMonth>1</DayOfMonth>
       <parallel>N</parallel>
       <xloc>50</xloc>
       <yloc>50</yloc>
@@ -35,24 +35,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/1-atletas.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/1-atletas.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>192</xloc>
       <yloc>48</yloc>
@@ -63,24 +63,24 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>${PROJECT_HOME}/pipelines/2-historico_jogos.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
+      <clear_files>N</clear_files>
+      <clear_rows>N</clear_rows>
       <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
+      <exec_per_row>N</exec_per_row>
+      <filename>${PROJECT_HOME}/pipelines/2-historico_jogos.hpl</filename>
+      <logext/>
+      <logfile/>
+      <loglevel>Basic</loglevel>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
+      <params_from_previous>N</params_from_previous>
+      <run_configuration>local</run_configuration>
+      <set_append_logfile>N</set_append_logfile>
+      <set_logfile>N</set_logfile>
+      <wait_until_finished>Y</wait_until_finished>
       <parallel>N</parallel>
       <xloc>368</xloc>
       <yloc>48</yloc>
@@ -113,6 +113,7 @@ A carga de dados na camada RAW , do IDOSOS F.C, foi concluída com sucesso!
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -162,6 +163,7 @@ Processo: 1- Carga da guia Atletas - RAW
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>
@@ -211,6 +213,7 @@ Processo: 2- Carga da guia histórico de jogos - RAW
       <zip_files>N</zip_files>
       <zip_name/>
       <use_auth>Y</use_auth>
+      <usexoauth2>N</usexoauth2>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>bazilio.developer@gmail.com</auth_user>
       <auth_password>Encrypted 2d9fec2ae00dd9693ad16b677db88a4ce</auth_password>

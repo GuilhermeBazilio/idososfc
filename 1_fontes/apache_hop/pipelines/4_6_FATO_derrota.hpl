@@ -16,8 +16,6 @@
     <created_date>2022/12/11 12:51:22.462</created_date>
     <modified_user>-</modified_user>
     <modified_date>2022/12/11 12:51:22.462</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
-    <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
@@ -73,17 +71,18 @@
       <schema_name/>
     </partitioning>
     <commit>5000</commit>
-    <connection>sqldb-projetoaplicado-prod</connection>
+    <connection>db_bazilio_test</connection>
     <fields>
 </fields>
-    <return_field/>
     <ignore_errors>N</ignore_errors>
+    <only_when_have_rows>N</only_when_have_rows>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
     <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
+    <return_field/>
     <return_keys>N</return_keys>
-    <schema>dbo</schema>
+    <schema>IDOSOS_PROD</schema>
     <specify_fields>N</specify_fields>
     <table>fato_derrota</table>
     <tablename_field/>
@@ -108,10 +107,10 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>sqldb-projetoaplicado-tst</connection>
+    <connection>db_bazilio_test</connection>
     <execute_each_row>N</execute_each_row>
     <limit>0</limit>
-    <sql>SELECT id,atleta,derrota FROM fato_derrota</sql>
+    <sql>SELECT id,atleta,derrota FROM IDOSOS_TEST.fato_derrota;</sql>
     <variables_active>N</variables_active>
     <attributes/>
     <GUI>
