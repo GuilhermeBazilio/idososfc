@@ -1,0 +1,4 @@
+server: sql-bazilio-server.database.windows.net
+database: db_bazilio_test
+User: bazilio_tests
+Pass: Engenieer_143132!
