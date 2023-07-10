@@ -5,6 +5,6 @@ Projeto de BI do Idosos F.C - um time de futebol semanal. Atualmente, o controle
 
 <h3> 1 -  Criação de um banco de dados na nuvem </h3>
 
-<h3> 2 -  Ingestão de dados em um Datawarehouse PostgreSql, via Apache Hope </h3>
+<h3> 2 -  Ingestão de dados em um Datawarehouse, via Apache Hope </h3>
 
 <h3> 3 -  Scripts de análise via SQL Server  </h3>
