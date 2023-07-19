@@ -1,20 +1,20 @@
 {
   "rdbms": {
     "MSSQLNATIVE": {
-      "databaseName": "sqldb-projetoaplicado-prod",
+      "databaseName": "db_bazilio_test",
       "instanceName": "",
       "pluginId": "MSSQLNATIVE",
       "usingDoubleDigit": false,
       "usingIntegratedSecurity": false,
       "accessType": 0,
-      "hostname": "sql-projetoaplicado-server.database.windows.net",
-      "password": "Encrypted 2bec8dda700c2868b9448fa238fc1fd9b",
-      "port": "1433",
+      "hostname": "sql-bazilio-server.database.windows.net",
+      "password": "Encrypted 47d0ffcaa603c297969448fa238fc1fd9b",
       "pluginName": "MS SQL Server (Native)",
+      "port": "1433",
       "attributes": {
-        "SUPPORTS_TIMESTAMP_DATA_TYPE": "Y",
+        "SUPPORTS_TIMESTAMP_DATA_TYPE": "N",
         "QUOTE_ALL_FIELDS": "N",
-        "SUPPORTS_BOOLEAN_DATA_TYPE": "Y",
+        "SUPPORTS_BOOLEAN_DATA_TYPE": "N",
         "FORCE_IDENTIFIERS_TO_LOWERCASE": "N",
         "PRESERVE_RESERVED_WORD_CASE": "Y",
         "SQL_CONNECT": "",
@@ -22,8 +22,8 @@
         "PREFERRED_SCHEMA_NAME": ""
       },
       "manualUrl": "",
-      "username": "projetoaplicado"
+      "username": "bazilio_tests"
     }
   },
-  "name": "sqldb-projetoaplicado-prod"
+  "name": "db_bazilio_test"
 }
