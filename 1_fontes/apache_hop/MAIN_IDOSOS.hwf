@@ -31,7 +31,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <name>1_workflow_camada_RAW.hwf</name>
+      <name>1_workflow_camada_RAW_22.hwf</name>
       <description/>
       <type>WORKFLOW</type>
       <attributes/>
@@ -57,7 +57,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <name>2_workflow_camada_STG.hwf</name>
+      <name>2_workflow_camada_STG_22.hwf</name>
       <description/>
       <type>WORKFLOW</type>
       <attributes/>
@@ -83,7 +83,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <name>3_workflow_camada_TEST.hwf</name>
+      <name>3_workflow_camada_TEST_22.hwf</name>
       <description/>
       <type>WORKFLOW</type>
       <attributes/>
@@ -109,7 +109,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <name>4_workflow_camada_PROD.hwf</name>
+      <name>4_workflow_camada_PROD_22.hwf</name>
       <description/>
       <type>WORKFLOW</type>
       <attributes/>
@@ -138,28 +138,28 @@
   <hops>
     <hop>
       <from>Start</from>
-      <to>1_workflow_camada_RAW.hwf</to>
+      <to>1_workflow_camada_RAW_22.hwf</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>1_workflow_camada_RAW.hwf</from>
-      <to>2_workflow_camada_STG.hwf</to>
+      <from>1_workflow_camada_RAW_22.hwf</from>
+      <to>2_workflow_camada_STG_22.hwf</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>2_workflow_camada_STG.hwf</from>
-      <to>3_workflow_camada_TEST.hwf</to>
+      <from>2_workflow_camada_STG_22.hwf</from>
+      <to>3_workflow_camada_TEST_22.hwf</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>3_workflow_camada_TEST.hwf</from>
-      <to>4_workflow_camada_PROD.hwf</to>
+      <from>3_workflow_camada_TEST_22.hwf</from>
+      <to>4_workflow_camada_PROD_22.hwf</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pipeline>
   <info>
-    <name>2-historico_jogos</name>
+    <name>2-historico_jogos_23</name>
     <name_sync_with_filename>Y</name_sync_with_filename>
     <description/>
     <extended_description/>
@@ -178,7 +178,7 @@
       <file_required>N</file_required>
       <filemask/>
       <include_subfolders>N</include_subfolders>
-      <name>D:\2_git\idososfc\1_fontes\dados\Futebol 2022.xlsx</name>
+      <name>D:\2_git\idososfc\1_fontes\dados\Futebol 2023.xlsx</name>
     </file>
     <filefield/>
     <header>Y</header>
@@ -231,11 +231,14 @@
     <only_when_have_rows>N</only_when_have_rows>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
+    <return_field/>
     <return_keys>N</return_keys>
     <schema>IDOSOS_RAW</schema>
     <specify_fields>N</specify_fields>
-    <table>fato_historico_jogos</table>
+    <table>fato_historico_jogos_23</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>

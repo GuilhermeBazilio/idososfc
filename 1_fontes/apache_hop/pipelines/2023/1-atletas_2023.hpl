@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pipeline>
   <info>
-    <name>1-atletas</name>
+    <name>1-atletas_2023</name>
     <name_sync_with_filename>Y</name_sync_with_filename>
     <description/>
     <extended_description/>
@@ -76,24 +76,15 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <accept_field/>
     <accept_filenames>N</accept_filenames>
-    <accept_transform_name/>
     <add_to_result_filenames>Y</add_to_result_filenames>
-    <bad_line_files_destination_directory/>
     <bad_line_files_extension>warning</bad_line_files_extension>
     <encoding>UTF-8</encoding>
     <error_ignored>Y</error_ignored>
-    <error_line_files_destination_directory/>
     <error_line_files_extension>error</error_line_files_extension>
     <error_line_skipped>N</error_line_skipped>
-    <extensionFieldName/>
     <fields>
       <field>
-        <currency/>
-        <decimal/>
-        <format/>
-        <group/>
         <length>-1</length>
         <name>Atleta</name>
         <precision>-1</precision>
@@ -102,10 +93,6 @@
         <type>String</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
-        <format/>
-        <group/>
         <length>-1</length>
         <name>Posicao</name>
         <precision>-1</precision>
@@ -114,10 +101,6 @@
         <type>String</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
-        <format/>
-        <group/>
         <length>-1</length>
         <name>Tier</name>
         <precision>-1</precision>
@@ -126,10 +109,6 @@
         <type>String</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
-        <format/>
-        <group/>
         <length>-1</length>
         <name>Aproveitamento_individual</name>
         <precision>-1</precision>
@@ -138,10 +117,7 @@
         <type>String</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
         <format>0</format>
-        <group/>
         <length>-1</length>
         <name>Presenca</name>
         <precision>-1</precision>
@@ -150,10 +126,7 @@
         <type>Integer</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
         <format>0</format>
-        <group/>
         <length>-1</length>
         <name>Vitorias</name>
         <precision>-1</precision>
@@ -162,10 +135,7 @@
         <type>Integer</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
         <format>0</format>
-        <group/>
         <length>-1</length>
         <name>Derrotas</name>
         <precision>-1</precision>
@@ -174,10 +144,7 @@
         <type>Integer</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
         <format>0</format>
-        <group/>
         <length>-1</length>
         <name>Empates</name>
         <precision>-1</precision>
@@ -186,10 +153,7 @@
         <type>Integer</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
         <format>0</format>
-        <group/>
         <length>-1</length>
         <name>Pontos</name>
         <precision>-1</precision>
@@ -198,10 +162,6 @@
         <type>Integer</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
-        <format/>
-        <group/>
         <length>-1</length>
         <name>Confirmou_presenca</name>
         <precision>-1</precision>
@@ -210,10 +170,6 @@
         <type>String</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
-        <format/>
-        <group/>
         <length>-1</length>
         <name>Observacao</name>
         <precision>-1</precision>
@@ -222,10 +178,6 @@
         <type>String</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
-        <format/>
-        <group/>
         <length>-1</length>
         <name>Fixo</name>
         <precision>-1</precision>
@@ -234,10 +186,6 @@
         <type>String</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
-        <format/>
-        <group/>
         <length>-1</length>
         <name>Ativo</name>
         <precision>-1</precision>
@@ -246,10 +194,7 @@
         <type>String</type>
       </field>
       <field>
-        <currency/>
-        <decimal/>
         <format>dd/MM/yyyy</format>
-        <group/>
         <length>-1</length>
         <name>Data_Cadastro</name>
         <precision>-1</precision>
@@ -259,25 +204,14 @@
       </field>
     </fields>
     <file>
-      <exclude_filemask/>
       <file_required>N</file_required>
-      <filemask/>
       <include_subfolders>N</include_subfolders>
-      <name>D:\2_git\idososfc\1_fontes\dados\Futebol 2022.xlsx</name>
+      <name>D:\2_git\idososfc\1_fontes\dados\Futebol 2023.xlsx</name>
     </file>
-    <filefield/>
     <header>Y</header>
-    <hiddenFieldName/>
-    <lastModificationTimeFieldName/>
     <limit>5000</limit>
-    <line_number_files_destination_directory/>
     <line_number_files_extension>line</line_number_files_extension>
     <noempty>Y</noempty>
-    <pathFieldName/>
-    <rootUriNameFieldName/>
-    <rownumfield/>
-    <sheetfield/>
-    <sheetrownumfield/>
     <sheets>
       <sheet>
         <name>Atletas</name>
@@ -285,12 +219,9 @@
         <startrow>1</startrow>
       </sheet>
     </sheets>
-    <shortFileFieldName/>
-    <sizeFieldName/>
     <spreadsheet_type>POI</spreadsheet_type>
     <stoponempty>N</stoponempty>
     <strict_types>N</strict_types>
-    <uriNameFieldName/>
     <attributes/>
     <GUI>
       <xloc>256</xloc>
@@ -339,11 +270,14 @@
     <only_when_have_rows>N</only_when_have_rows>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
+    <return_field/>
     <return_keys>N</return_keys>
     <schema>IDOSOS_RAW</schema>
     <specify_fields>N</specify_fields>
-    <table>dim_atletas</table>
+    <table>dim_atletas_23</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
