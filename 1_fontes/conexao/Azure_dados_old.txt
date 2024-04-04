@@ -1,19 +1,18 @@
 server: sql-projetoaplicado-server
 user: projetoaplicado
-pass: Projeto_143132!
+
 
 -- RAW
 database: sqldb-projetoaplicado-raw
-connection string: Server=tcp:sql-projetoaplicado-server.database.windows.net,1433;Initial Catalog=sqldb-projetoaplicado-raw;Persist Security Info=False;User ID=projetoaplicado;Password=Projeto_143132!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
 
 -- STAGE
 database: sqldb-projetoaplicado-stg
-connection string: Server=tcp:sql-projetoaplicado-server.database.windows.net,1433;Initial Catalog=sqldb-projetoaplicado-stg;Persist Security Info=False;User ID=projetoaplicado;Password=Projeto_143132!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
 
 -- TESTE
 database: sqldb-projetoaplicado-tst
-connection string: Server=tcp:sql-projetoaplicado-server.database.windows.net,1433;Initial Catalog=sqldb-projetoaplicado-tst;Persist Security Info=False;User ID=projetoaplicado;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
 
 -- PROD
 database: sqldb-projetoaplicado-prod
-connection string: Server=tcp:sql-projetoaplicado-server.database.windows.net,1433;Initial Catalog=sqldb-projetoaplicado-prod;Persist Security Info=False;User ID=projetoaplicado;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
